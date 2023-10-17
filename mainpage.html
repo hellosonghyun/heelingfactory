@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+    .background-banner {
+      background-image: linear-gradient(45deg,
+          rgb(51 43 43 / 75%),
+          rgb(20 19 20 / 61%)), src("images/head_image1.png");
+      max-height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin-bottom: 80px;
+    }
+    .ms-3 {
+      margin: 0 !important;
+      text-align: center;
+    }
+    .head-image1 {
+      width: 100%;
+      height: 100%;
+    }
+    .card-text {
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      word-break: keep-all;
+    }
+  </style>
+</head>
+<body data-bs-theme="white">
+  <div class="background-banner">
+    <div class="ms-3">
+      <img src="images/head_image1.png" alt="" class="head-image1"/>
+    </div>
+    <div class="px-4 py-5 my-5 text-center" style="position:absolute; top:30%; left:50%; transform:translate(-50%, -50%)">
+      <h1 class="display-5 fw-bold text-body-emphasis" style="width: 1000px; color: black !important; opacity: 0.5;">힐링공장공장장 아날로그 스토어</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4"><br>
+          힐링공장공장장에 오신 것을 환영합니다</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <!-- Button trigger modal -->
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    </div>
+    
+  </div>  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">구매 요청하기</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">장소</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="장소 입력">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">시간</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="시간 입력">
+              </div>
+              </div>
+              <div style="text-align: center; margin-bottom: 15px;">
+                <button type="submit" class="btn btn-danger" style="width: 30%;">구매 요청 보내기</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 mx-auto w-75 pb-5">
+      <div class="col">
+        <div style="text-align: center;">
+          <p style="background-color: #E2F667; width: 60px; border-radius: 8px; margin-bottom: 10px;">판매중</p>
+        </div>
+        <div class="card h-100">
+          <img src="images/card_image1.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">지옥에서 돌아온 헬창 토끼</h5>
+            <p class="card-text">장인의 손길로 한땀 한땀 정성들여 쉬는 시간, 점심 시간, 저녁 시간 모두 투자해서 만든 귀여운 녀...</p>
+            <p class="card-text">판매가: 3,000,000원</p>
+            <p class="card-text">재고: 1개</p>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              구매 요청
+            </button>
+          </div>
+          
+        </div>
+        
+      </div>
+      <div class="col">
+        <div style="text-align: center;">
+          <p style="background-color: #E2F667; width: 60px; border-radius: 8px; margin-bottom: 10px;">판매중</p>
+        </div>
+        <div class="card h-100">
+          <img src="images/card_image1.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">지옥에서 돌아온 헬창 토끼</h5>
+            <p class="card-text">장인의 손길로 한땀 한땀 정성들여 쉬는 시간, 점심 시간, 저녁 시간 모두 투자해서 만든 귀여운 녀...</p>
+            <p class="card-text">판매가: 3,000,000원</p>
+            <p class="card-text">재고: 1개</p>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: blue; border-color: blue;">
+              요청 확인
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div style="text-align: center;">
+          <p style="background-color: #E2F667; width: 60px; border-radius: 8px; margin-bottom: 10px;">판매중</p>
+        </div>
+        <div class="card h-100">
+          <img src="images/card_image1.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">지옥에서 돌아온 헬창 토끼</h5>
+            <p class="card-text">장인의 손길로 한땀 한땀 정성들여 쉬는 시간, 점심 시간, 저녁 시간 모두 투자해서 만든 귀여운 녀...</p>
+            <p class="card-text">판매가: 3,000,000원</p>
+            <p class="card-text">재고: 1개</p>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              구매 요청
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div style="text-align: center;">
+          <p style="background-color: #E2F667; width: 60px; border-radius: 8px; margin-bottom: 10px;">판매중</p>
+        </div>
+        <div class="card h-100">
+          <img src="images/card_image1.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">지옥에서 돌아온 헬창 토끼</h5>
+            <p class="card-text">장인의 손길로 한땀 한땀 정성들여 쉬는 시간, 점심 시간, 저녁 시간 모두 투자해서 만든 귀여운 녀...</p>
+            <p class="card-text">판매가: 3,000,000원</p>
+            <p class="card-text">재고: 1개</p>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              구매 요청
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <footer>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>타인의 삶, 이진호&송현영</p>
+        
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
